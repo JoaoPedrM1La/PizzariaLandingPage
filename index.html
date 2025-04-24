@@ -1,34 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pizzaria Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navegação -->
     <header>
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
     
-    <div class="welcome">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <h1>Bem-vindo à Alessio's</h1>
-        <h3>Saborosas pizzas feitas especialmente para você!</h3>
-        <button class="menu-btn">
-            Ver Cardápio
-        </button>
-    </div>
+        <p>Saborosas pizzas feitas especialmente para você!</p>
+        <a href="#cardapio" class="btn">Ver Cardápio</a>
+    </section>
+    
+    <!-- Cardápio -->
+    <section id="cardapio" class="section">
+        <h2>Cardápio</h2>
+        
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pizza Margherita">
+                <div class="menu-item-content">
+                    <h3>Pizza Margherita</h3>
+                    <p>Molho de tomate, mussarela, manjericão fresco.</p>
+                    <div class="price">R$ 39,90</div>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pizza Pepperoni">
+                <div class="menu-item-content">
+                    <h3>Pizza Pepperoni</h3>
+                    <p>Molho de tomate, pepperoni, queijo mussarela.</p>
+                    <div class="price">R$ 44,90</div>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pizza Calabresa">
+                <div class="menu-item-content">
+                    <h3>Pizza Calabresa</h3>
+                    <p>Molho de tomate, calabresa, cebola, mussarela.</p>
+                    <div class="price">R$ 42,90</div>
+                </div>
+            </div>
 
-    <div class="menu">
-        <div></div>
-        <h3>Cardápio</h3>
-
-    </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pizza Queijo">
+                <div class="menu-item-content">
+                    <h3>Pizza Queijo</h3>
+                    <p>Molho de tomate, pepperoni, mussarela</p>
+                    <div class="price">R$ 40,00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sobre Nós -->
+    <section id="sobre" class="section about">
+        <h2>Sobre Nós</h2>
+        <p>Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas.</p>
+    </section>
+    
+    <!-- Contato -->
+    <section id="contato" class="section contact">
+        <h2>Contato</h2>
+        
+        <div class="contact-info">
+            <h3>Informações</h3>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Avenida Onze de Outubro, nº 123<br>
+            Centro, Cidade Qualquer/RJ CEP: 12345-678</p>
+            <p><i class="fas fa-phone"></i> <strong>Telefone:</strong> (11) 5555-5555</p>
+            <p><i class="fas fa-envelope"></i> <strong>E-mail:</strong> contacto@alessios.pizza</p>
+            <p><i class="fas fa-clock"></i> <strong>Horário de Funcionamento:</strong><br>
+            Segunda a Sábado: 11h00 às 23h00<br>
+            Domingo: 16h00 às 23h00</p>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Alessio's Pizzaria</p>
+    </footer>
 </body>
 </html>
