@@ -74,25 +74,100 @@
     </section>
 
     <!-- Sugestão de Pizza -->
-    <section id="sugestao">
-        <h2>Sugestão de Pizza</h2>
-        <p>Sugira pizzas para o nosso cardápio</p>
-        
-        <div>
-            <h3>Nome</h3>
-            <textarea name="nome" id="nome" cols="50" rows="1"></textarea>
-            <h3>Descrição</h3>
-            <textarea name="descricao" id="descricao" cols="50" rows="10"></textarea>
-            <h3>Ingredientes</h3>
-            <select name="" id="">
-
-            </select>
-            <ul>
-                
-            </ul>
-            
-            <h3>Preços</h3>
+    <section id="sugestor" class="section sugestor">
+        <h2>Sugira uma Pizza Personalizada</h2>
+    
+        <div class="informacoes_pizza">
+            <h3>Nome da sua pizza:</h3>
+            <input type="text" id="pizza-nome">
         </div>
+        
+        <div class="informacoes_pizza">
+            <h3>Descrição:</h3>
+            <textarea id="pizza-desc" ></textarea>
+        </div>
+            
+        <div class="informacoes_pizza">
+            <h3>Ingredientes:</h3>
+            <div class="ingredientes">
+                <div class="category-title">Molhos</div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="molho-tomate" value="Molho de tomate">
+                    <label for="molho-tomate">Molho de tomate</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="molho-branco" value="Molho branco">
+                    <label for="molho-branco">Molho branco</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="molho-pesto" value="Molho pesto">
+                    <label for="molho-pesto">Molho pesto</label>
+                </div>
+                
+                <div class="category-title">Queijos</div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="mussarela" value="Mussarela">
+                    <label for="mussarela">Mussarela</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="parmesao" value="Parmesão">
+                    <label for="parmesao">Parmesão</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="gorgonzola" value="Gorgonzola">
+                    <label for="gorgonzola">Gorgonzola</label>
+                </div>
+                
+                <div class="category-title">Carnes</div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="calabresa" value="Calabresa">
+                    <label for="calabresa">Calabresa</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="pepperoni" value="Pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="frango" value="Frango desfiado">
+                    <label for="frango">Frango desfiado</label>
+                </div>
+                
+                <div class="category-title">Vegetais</div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="tomate" value="Tomate">
+                    <label for="tomate">Tomate</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="cebola" value="Cebola">
+                    <label for="cebola">Cebola</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="pimentao" value="Pimentão">
+                    <label for="pimentao">Pimentão</label>
+                </div>
+                
+                <div class="category-title">Extras</div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="azeitona" value="Azeitonas">
+                    <label for="azeitona">Azeitonas</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="oregano" value="Orégano">
+                    <label for="oregano">Orégano</label>
+                </div>
+                <div class="ingredient-option">
+                    <input type="checkbox" id="manjericao" value="Manjericão">
+                    <label for="manjericao">Manjericão</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="informacoes_pizza">
+            <h3>Preço (R$):</h3>
+            <input type="text" id="pizza-preco">
+        </div>
+
+        <input type="button" value="Enviar">
     </section>
     
     <!-- Contato -->
